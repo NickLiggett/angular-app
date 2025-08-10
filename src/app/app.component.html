@@ -1,0 +1,12 @@
+<div class="app-container">
+  <app-header (toggleSidebar)="toggleSidebar()"></app-header>
+
+  <div class="main-wrapper">
+    <app-sidebar
+      [isOpen]="isSidebarOpen"
+      (closeSidebar)="toggleSidebar()">
+    </app-sidebar>
+
+    <app-main-content [sidebarOpen]="isSidebarOpen"></app-main-content>
+  </div>
+</div>
