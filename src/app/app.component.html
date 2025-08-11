@@ -7,6 +7,9 @@
       (closeSidebar)="toggleSidebar()">
     </app-sidebar>
 
-    <app-main-content [sidebarOpen]="isSidebarOpen"></app-main-content>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+
   </div>
 </div>

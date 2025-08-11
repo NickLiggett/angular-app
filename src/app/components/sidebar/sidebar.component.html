@@ -2,7 +2,7 @@
   <div class="sidebar-content">
     <ul class="menu-list">
       <li *ngFor="let item of menuItems" class="menu-item">
-        <a href="#" class="menu-link" (click)="onItemClick()">
+        <a routerLink="{{item.route}}" routerLinkActive="active" class="menu-link" (click)="onItemClick()">
           <span class="menu-icon">{{ item.icon }}</span>
           <span class="menu-label">{{ item.label }}</span>
         </a>
