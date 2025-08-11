@@ -68,21 +68,3 @@ h2 {
   color: #7f8c8d;
   line-height: 1.8;
 }
-
-/* Desktop styles */
-@media (min-width: 769px) {
-  .main-content.sidebar-open {
-    margin-left: 250px;
-  }
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .content-container {
-    padding: 15px;
-  }
-  
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-}
