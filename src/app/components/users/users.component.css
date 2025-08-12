@@ -1,0 +1,59 @@
+/* Table container */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden; /* keeps rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Header row styling */
+mat-header-row {
+  background-color: #2c3e50; /* dark dashboard blue */
+}
+
+mat-header-cell {
+  color: #ecf0f1;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 14px 16px;
+  border-bottom: 2px solid #1a252f;
+}
+
+/* Body row styling */
+mat-cell {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #2c3e50;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Hover effect */
+mat-row:hover {
+  background-color: #f4f6f8;
+  transition: background-color 0.2s ease;
+}
+
+/* Alternate row background */
+mat-row:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Role column coloring */
+mat-cell.role-ADMIN {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+mat-cell.role-USER {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Smooth transitions */
+mat-row,
+mat-header-row {
+  transition: all 0.2s ease;
+}
