@@ -1,11 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
@@ -17,7 +17,6 @@ export class SidebarComponent {
     { icon: '👥', label: 'Users', route: '/users' },
     { icon: '📊', label: 'Analytics', route: '/analytics' },
     { icon: '⚙️', label: 'Settings', route: '/settings' },
-    { icon: '📞', label: 'Contact', route: '/contact' }
   ];
 
   onItemClick() {
